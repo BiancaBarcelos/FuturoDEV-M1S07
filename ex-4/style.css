@@ -1,0 +1,100 @@
+:root {
+    --primary : #FAFAFA;
+    --secondary : #4460F1;
+    --tertiary : #E9EFF6;
+    --text : #4F4F4F66;
+    --contrast : #4F4F4F;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--contrast);
+}
+body {
+    padding: 0 100px;
+    background-image: url(../assets/bg-ex-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -497px 0px;
+}
+h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 17px;
+    margin: 15px 0;
+    & a {
+        color: var(--secondary);
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+section {
+    max-width: 500px;
+    margin: auto;
+}
+form {
+    display: flex;
+    gap: 10 px;
+    flex-direction: column;
+    & fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0;
+        & input {
+            margin-top: 15px;
+            height: 60px;
+            border-radius: 7px;
+            border: .8px solid #4F4F4F66;
+            text-align: start;
+            padding: 0 25px;
+        }
+    }
+}
+
+.btnSign {
+    height: 45px;
+    width: 90px;
+    border-radius: 5px;
+    padding: 0 25px;
+    background-color: var(--contrast);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    margin: 30px 0;
+}
+.btnSign:hover {
+    background-color: var(--text);
+}
+#login a {
+    color: var(--contrast);
+    transition: all .3s ease-in-out;
+}
+#login a:hover {
+    color: var(--text);
+}
+
+.logo_bianca {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 50px;
+}
+.logo_bianca img{
+    width: 30px;
+    filter: invert(1);
+}
