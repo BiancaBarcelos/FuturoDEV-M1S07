@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <section>
+        <div id="colunaTxt">
+            <div>
+                <h1>Sign In to <br>this session</h1>
+                <h2>If you don't have an accont, <br>You can <a href="../ex-4/index.html">Register here!</a></h2>
+            </div>
+            <img src="../assets/menina.png" alt="">
+        </div>
+        <div id="colunaForm">
+            <form action="">
+                <input class="btn" type="email" id="email" class="form" placeholder="Email address">
+                <div>
+                    <input class="btn" type="password" id="password" class="form" placeholder="Password">
+                    <span class="olho"> <img class="olho-img1" onclick="passwordOlho(1)" src="../assets/olho_fechado.png" alt=""><img class="d-none olho-img2" onclick="passwordOlho(2)" src="../assets/olho_aberto.png" alt=""></span>
+                </div>
+                <a id="forgot" href="../ex-3/">Forgot password?</a>
+                <a class="btn btnSign" href="../ex-4/index.html">Sign In</a>
+            </form>
+            <div>
+                <p id="or"><span>Or</span></p>
+                <a class="btn btnOr" target="_blank" href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjZssmV6-CEAxWdALkGHRRpCWYQPAgJ&safe=active&ssui=on"> <img src="../assets/google.svg" alt="">Continue with Google</a>
+                <a class="btn btnOr" target="_blank" href="https://www.facebook.com/campaign/landing.php?&campaign_id=1654787885&extra_1=s%7Cc%7C318628673256%7Ce%7Cfacebook%27%7C&placement=&creative=318628673256&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1654787885%26adgroupid%3D62478117254%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D9102229%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=CjwKCAiAxaCvBhBaEiwAvsLmWCQKUSvKiqwntUK_NLragI9D2RbbsOvI4U8z8o1oWkTt0CbEZM-myhoCkVAQAvD_BwE"> <img src="../assets/facebook.svg" alt="">Continue with Facebook</a>
+            </div>
+        </div>
+    </section>
+    <div class="logo_bianca">
+        <img src="../assets/logo.png" alt="">
+        <p>Bianca Barcelos</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+:root {
+    --primary : #FAFAFA;
+    --secondary : #4460F1;
+    --tertiary : #E9EFF6;
+    --text : #4F4F4F66;
+    --contrast : #4F4F4F;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--contrast);
+}
+h1 {
+    font-weight: 900;
+    font-size: 60px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 25px;
+    & a {
+        color: var(--secondary);
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+.d-none {
+    display: none;
+}
+body {
+    background-color: var(--primary);
+    & section {
+        display: flex;
+        align-items: start;
+        max-width: 1200px;
+        margin: auto;
+        justify-content: space-around;
+        margin-top: 50px;
+        & #colunaTxt {
+            display: flex;
+            flex-wrap: wrap;
+            & > div {
+                width: 100%;
+                height: 300px;
+            }
+            & h1 {
+                line-height: 108%;
+                padding-bottom: 30px;
+            }
+            & img {
+                width: 380px;
+                align-self: baseline;
+            }
+        }
+        & #colunaForm {
+            & form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                & div {
+                    position: relative;
+                }
+                & .olho {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    border: 0;
+                    background-color: transparent;
+                    cursor: pointer;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            & .btn {
+                height: 80px;
+                border-radius: 25px;
+                display: block;
+                background-color: var(--tertiary);
+                border: none;
+                text-align: start;
+                padding: 0 25px;
+                color: var(--text);
+            }
+            & .btnSign {
+                background-color: var(--secondary);
+                color: var(--primary);
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .3s ease-in-out;
+            }
+            & .btnSign:hover {
+                background-color: #243caf;
+            }
+            & .btnOr {
+                display: flex;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                background-color: var(--primary);
+                border: var(--text) 1px solid;
+                padding: 0 60px;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+            }
+            & .btnOr:hover {
+                color: var(--contrast);
+                background-color: #E9EFF666;
+            }
+            & #forgot {
+                text-align: end;
+                color: var(--text);
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+            }
+            & #forgot:hover {
+                color: var(--contrast);
+            }
+            & div {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                & #or{
+                    margin-top: 70px;
+                    position: relative;
+                    width: 100%;
+                    text-align: center;
+                    cursor: default;
+                    & span {
+                        background-color: var(--primary);
+                        display: block;
+                        width: fit-content;
+                        margin: auto;
+                        padding: 20px;
+                        color: var(--text);
+                    }
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        background-color: var(--text);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.logo_bianca {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 40px;
+}
+.logo_bianca img{
+    width: 30px;
+    filter: invert(1);
+}
